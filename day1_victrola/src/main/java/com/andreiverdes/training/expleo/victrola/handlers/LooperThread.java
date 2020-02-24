@@ -1,20 +1,14 @@
 package com.andreiverdes.training.expleo.victrola.handlers;
 
-import android.os.Handler;
 import android.os.Looper;
 
-import com.andreiverdes.training.expleo.victrola.util.Lazy;
-
 import java.util.Random;
-
-import static com.andreiverdes.training.expleo.victrola.util.Lazy.byLazy;
 
 
 public class LooperThread extends Thread {
 
     public Looper looper;
     private Random random = new Random();
-    public Lazy<Handler> handlerLazy = byLazy(() -> new Handler(looper));
 
     public LooperThread() {
         super(LooperThread.class.getSimpleName());

@@ -43,18 +43,20 @@ public class HandlersFragment extends Fragment {
         button = root.findViewById(R.id.new_task);
 
         button.setOnClickListener(view -> {
-            putBestHandlerToWork();
+            putSimpleWorkerToWork();
+            putLooperWorkerToWork();
+            putBestWorkerToWork();
         });
 
         Lessons.displayLesson1(textView);
         return root;
     }
 
-    private void putBestHandlerToWork() {
+    private void putBestWorkerToWork() {
         if (numberOfTasks == 0) {
             textView.setText("");
         }
-        bestThread.handler.post(() -> {
+        new Handler(bestThread.getLooper()).post(() -> {
             bestThread.sleepRandomly();
             Message message = Message.obtain();
             message.obj = "Task " + ++numberOfTasks + " done from " + Thread.currentThread().getName();
@@ -66,7 +68,7 @@ public class HandlersFragment extends Fragment {
         if (numberOfTasks == 0) {
             textView.setText("");
         }
-        looperWorker.handlerLazy.get().post(() -> {
+        new Handler(looperWorker.looper).post(() -> {
             looperWorker.sleepRandomly();
             Message message = Message.obtain();
             message.obj = "Task " + ++numberOfTasks + " done from " + Thread.currentThread().getName();
@@ -91,5 +93,6 @@ public class HandlersFragment extends Fragment {
         super.onDestroy();
         simpleWorker.quit();
         looperWorker.quit();
+        bestThread.getLooper().quit();
     }
 }
