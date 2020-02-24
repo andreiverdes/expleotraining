@@ -1,11 +1,11 @@
 Services
 
-* Foreground
+* Foreground - startForegroundService()/startService()
   * A foreground service performs some operation that is noticeable to the user
   * Needs to display a notification
-* Background
+* Background - startService()
   * If your app targets API level 26 or higher, the system imposes restrictions on running background services when the app itself isn't in the foreground. In most situations, for example, you shouldn't access location information from the background. Instead, schedule tasks using WorkManager.
-* Bound
+* Bound - bindService()
   * When an app component binds to it (creates a link) by calling `bindService()`
   * Multiple components can bind to the service at once, but when all of them unbind, the service is destroyed.
 

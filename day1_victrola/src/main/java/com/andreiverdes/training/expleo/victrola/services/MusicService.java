@@ -1,7 +1,6 @@
 package com.andreiverdes.training.expleo.victrola.services;
 
 import android.app.Service;
-import android.content.Intent;
 import android.media.MediaPlayer;
 
 import com.andreiverdes.training.expleo.victrola.R;
@@ -19,29 +18,6 @@ public abstract class MusicService extends Service {
     private MediaPlayer mediaPlayer;
     private List<Integer> songs = new ArrayList<>();
     private int currentSongIndex = 0;
-
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null && intent.getAction() != null) {
-            switch (intent.getAction()) {
-                case ACTION_PLAY_PAUSE_MUSIC:
-                    playPauseMusic();
-                    break;
-                case ACTION_NEXT_SONG:
-                    nextSong();
-                    break;
-                case ACTION_PREVIOUS_SONG:
-                    previousSong();
-                    break;
-                case ACTION_QUIT:
-                    stopSelf();
-                    break;
-                default:
-                    throw new IllegalStateException("Unexpected value: " + intent.getAction());
-            }
-        }
-        return START_STICKY;
-    }
 
     @Override
     public void onCreate() {
