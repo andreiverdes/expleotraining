@@ -28,3 +28,8 @@ Use IntentService or a separate Thread
   * Invoked to perform one-time setup procedures when the service is initially created (before it calls either `onStartCommand()` or `onBind()`)
 * onDestroy()
   * Invoked when the service is no longer used and is being destroyed.
+
+
+### Exercises
+
+1. In your chat app use all 3 kinds of Services to back your chat as a server.
