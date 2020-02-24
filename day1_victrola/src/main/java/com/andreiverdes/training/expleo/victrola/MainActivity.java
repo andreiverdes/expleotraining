@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
-        public void onServiceConnected(ComponentName name, IBinder service) {
-            boundMusicService = ((BoundMusicService.Linker) service).getService();
+        public void onServiceConnected(ComponentName name, IBinder linker) {
+            boundMusicService = ((BoundMusicService.Linker) linker).getService();
             serviceBound = true;
         }
 

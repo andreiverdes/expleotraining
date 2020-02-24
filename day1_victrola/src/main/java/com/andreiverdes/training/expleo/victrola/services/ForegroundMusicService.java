@@ -5,29 +5,21 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
-import android.os.IBinder;
 
-import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
 import com.andreiverdes.training.expleo.victrola.R;
 
-public class ForegroundMusicService extends MusicService {
+public class ForegroundMusicService extends BackgroundMusicService {
 
     private static final String CHANNEL = "PLAY_MUSIC_CHANNEL";
-    private static final int FOREGROUND_ID = 35467890;
+    private static final int FOREGROUND_ID = ForegroundMusicService.class.getName().hashCode();
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground(FOREGROUND_ID, buildForegroundNotification());
         super.onStartCommand(intent, flags, startId);
         return START_STICKY;
-    }
-
-    @Nullable
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
     }
 
     private Notification buildForegroundNotification() {

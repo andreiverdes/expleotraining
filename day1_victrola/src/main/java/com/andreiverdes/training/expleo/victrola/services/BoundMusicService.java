@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class BoundMusicService extends MusicService {
 
-    private final Linker linker = new Linker(this);
+    private Linker linker = new Linker(this);
 
     @Nullable
     @Override
@@ -17,7 +17,6 @@ public class BoundMusicService extends MusicService {
     }
 
     public static class Linker extends Binder {
-
         private BoundMusicService service;
 
         public Linker(BoundMusicService service) {

@@ -1,16 +1,8 @@
 package com.andreiverdes.training.expleo.victrola.services;
 
-import android.content.Intent;
-import android.os.IBinder;
-
-import androidx.annotation.Nullable;
-
+/**
+ * Stops only by stopSelf() or stopService()
+ */
 public class BackgroundMusicService extends MusicService {
-
-    @Nullable
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
-    }
 
 }

@@ -1,7 +1,11 @@
 package com.andreiverdes.training.expleo.victrola.services;
 
 import android.app.Service;
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.IBinder;
+
+import androidx.annotation.Nullable;
 
 import com.andreiverdes.training.expleo.victrola.R;
 
@@ -25,6 +29,35 @@ public abstract class MusicService extends Service {
         songs.add(R.raw.bensound_summer);
         songs.add(R.raw.bensound_ukulele);
         songs.add(R.raw.bensound_creativeminds);
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        if (intent != null && intent.getAction() != null) {
+            switch (intent.getAction()) {
+                case ACTION_PLAY_PAUSE_MUSIC:
+                    playPauseMusic();
+                    break;
+                case ACTION_NEXT_SONG:
+                    nextSong();
+                    break;
+                case ACTION_PREVIOUS_SONG:
+                    previousSong();
+                    break;
+                case ACTION_QUIT:
+                    stopSelf();
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + intent.getAction());
+            }
+        }
+        return START_STICKY;
+    }
+
+    @Nullable
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
     }
 
     @Override

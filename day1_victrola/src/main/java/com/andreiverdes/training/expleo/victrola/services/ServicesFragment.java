@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.andreiverdes.training.expleo.victrola.Lessons;
+import com.andreiverdes.training.expleo.victrola.MainActivity;
 import com.andreiverdes.training.expleo.victrola.R;
 
 public class ServicesFragment extends Fragment {
@@ -36,15 +37,15 @@ public class ServicesFragment extends Fragment {
 
 
         playPause.setOnClickListener(v -> {
-
+            ((MainActivity) getActivity()).boundMusicService.playPauseMusic();
         });
 
         next.setOnClickListener(v -> {
-
+            ((MainActivity) getActivity()).boundMusicService.nextSong();
         });
 
         previous.setOnClickListener(v -> {
-
+            ((MainActivity) getActivity()).boundMusicService.previousSong();
         });
 
         return root;
@@ -53,6 +54,12 @@ public class ServicesFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        startForegroundService(MusicService.ACTION_QUIT);
     }
 
     private void startBackgroundService(String action) {
