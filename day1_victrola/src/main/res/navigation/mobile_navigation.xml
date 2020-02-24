@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.andreiverdes.training.expleo.victrola.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.andreiverdes.training.expleo.victrola.handlers.HandlersFragment"
+        android:label="@string/title_handlers"
+        tools:layout="@layout/fragment_handlers" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.andreiverdes.training.expleo.victrola.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.andreiverdes.training.expleo.victrola.services.ServicesFragment"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_services" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.andreiverdes.training.expleo.victrola.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:name="com.andreiverdes.training.expleo.victrola.workmanager.WorkManagerFragment"
+        android:label="@string/title_workmanager"
+        tools:layout="@layout/fragment_work_manager" />
 </navigation>
