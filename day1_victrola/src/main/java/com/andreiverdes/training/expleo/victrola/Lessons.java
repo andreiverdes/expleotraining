@@ -21,6 +21,9 @@ public class Lessons {
     public static void displayLesson2(TextView textView) {
         loadLesson(textView, "lesson2.md");
     }
+    public static void displayLesson3(TextView textView) {
+        loadLesson(textView, "lesson3.md");
+    }
 
     private static void loadLesson(TextView textView, String lesson) {
         InputStream inputStream;
@@ -35,7 +38,7 @@ public class Lessons {
             markdown = total.toString();
             inputStream.close();
         } catch (IOException e) {
-            Log.e(HandlersFragment.class.getSimpleName(), "Read lesson 1:", e);
+            Log.e(HandlersFragment.class.getSimpleName(), "Read lesson:", e);
         }
         Markwon markwon = Markwon.create(textView.getContext());
         markwon.setMarkdown(textView, markdown);
