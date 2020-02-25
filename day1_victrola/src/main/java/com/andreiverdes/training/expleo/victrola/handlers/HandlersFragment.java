@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.andreiverdes.training.expleo.victrola.Lessons;
+import com.andreiverdes.training.expleo.utils.Lessons;
 import com.andreiverdes.training.expleo.victrola.R;
 
 public class HandlersFragment extends Fragment {

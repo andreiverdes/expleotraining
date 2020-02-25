@@ -1,2 +1,4 @@
-include ':day1_victrola', ':day2_cinema', ':utils'
+include ':utils'
+include ':day1_victrola'
+include ':day2_cinema'
 rootProject.name='ExpleoTraining'

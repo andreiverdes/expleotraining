@@ -19,6 +19,7 @@ import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
 
+import com.andreiverdes.training.expleo.utils.Lessons;
 import com.andreiverdes.training.expleo.victrola.R;
 import com.andreiverdes.training.expleo.victrola.util.Lazy;
 
@@ -65,6 +66,7 @@ public class WorkManagerFragment extends Fragment {
 
         textView = root.findViewById(R.id.text_work_manager);
 
+        Lessons.displayLesson3(textView);
 
         workManagerLazy.get()
                 .beginWith(sleepRequest)

@@ -1,10 +1,8 @@
-package com.andreiverdes.training.expleo.victrola;
+package com.andreiverdes.training.expleo.utils;
 
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.TextView;
-
-import com.andreiverdes.training.expleo.victrola.handlers.HandlersFragment;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,7 +36,7 @@ public class Lessons {
             markdown = total.toString();
             inputStream.close();
         } catch (IOException e) {
-            Log.e(HandlersFragment.class.getSimpleName(), "Read lesson:", e);
+            Log.e(Lessons.class.getSimpleName(), "Read lesson:", e);
         }
         Markwon markwon = Markwon.create(textView.getContext());
         markwon.setMarkdown(textView, markdown);
