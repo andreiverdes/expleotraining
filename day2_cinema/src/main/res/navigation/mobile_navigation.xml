@@ -12,4 +12,10 @@
         android:label="Step 1"
         tools:layout="@layout/fragment_step1" />
 
+    <fragment
+        android:id="@+id/step2"
+        android:name="com.andreiverdes.training.expleo.cinema.ui.step2.Step2Fragment"
+        android:label="Step 2"
+        tools:layout="@layout/fragment_step2" />
+
 </navigation>
