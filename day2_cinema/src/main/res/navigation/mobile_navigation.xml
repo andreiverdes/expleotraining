@@ -25,9 +25,14 @@
         tools:layout="@layout/fragment_step3" />
 
     <fragment
-    android:id="@+id/step4"
-    android:name="com.andreiverdes.training.expleo.cinema.ui.step4.Step4Fragment"
-    android:label="Step 4"
-    tools:layout="@layout/fragment_step4" />
+        android:id="@+id/step4"
+        android:name="com.andreiverdes.training.expleo.cinema.ui.step4.Step4Fragment"
+        android:label="Step 4"
+        tools:layout="@layout/fragment_step4" />
 
+    <fragment
+        android:id="@+id/step5"
+        android:name="com.andreiverdes.training.expleo.cinema.ui.step5.Step5Fragment"
+        android:label="Step 5"
+        tools:layout="@layout/fragment_step5" />
 </navigation>
