@@ -3,23 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/step1">
+
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.andreiverdes.training.expleo.cinema.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/step1"
+        android:name="com.andreiverdes.training.expleo.cinema.ui.step1.Step1Fragment"
+        android:label="Step 1"
+        tools:layout="@layout/fragment_step1" />
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.andreiverdes.training.expleo.cinema.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.andreiverdes.training.expleo.cinema.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>
