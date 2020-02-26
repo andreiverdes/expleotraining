@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.andreiverdes.training.expleo.arch.R;
 import com.andreiverdes.training.expleo.arch.databinding.ItemQuestionBinding;
-import com.andreiverdes.training.expleo.stackoverflow.model.QuestionItem;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -20,13 +19,13 @@ import java.util.List;
 
 public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.ViewHolder> {
 
-    private List<QuestionItem> itemList = new ArrayList<>();
+    private List<Item> itemList = new ArrayList<>();
 
     @BindingAdapter("items")
     public static void setItemList(RecyclerView recyclerView,
-                                   List<QuestionItem> questionItems) {
-        if (questionItems != null) {
-            ((QuestionsAdapter) recyclerView.getAdapter()).setItems(questionItems);
+                                   List<Item> items) {
+        if (items != null) {
+            ((QuestionsAdapter) recyclerView.getAdapter()).setItems(items);
         }
     }
 
@@ -52,8 +51,8 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        QuestionItem questionItem = itemList.get(position);
-        holder.binding.setCeVreau(questionItem);
+        Item item = itemList.get(position);
+        holder.binding.setItem(item);
         holder.binding.executePendingBindings();
     }
 
@@ -62,7 +61,7 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
         return itemList.size();
     }
 
-    public void setItems(List<QuestionItem> items) {
+    public void setItems(List<Item> items) {
         this.itemList.clear();
         this.itemList.addAll(items);
         this.notifyDataSetChanged();
@@ -78,4 +77,9 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
         }
     }
 
+    public static class Item {
+        public Uri photoUri;
+        public String questionTitle;
+        public String questionDate;
+    }
 }

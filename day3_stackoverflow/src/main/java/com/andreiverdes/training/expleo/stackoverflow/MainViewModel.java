@@ -8,9 +8,8 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Transformations;
 
-import com.andreiverdes.training.expleo.cinema.data.model.Item;
-import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
-import com.andreiverdes.training.expleo.stackoverflow.model.QuestionItem;
+import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
+import com.andreiverdes.training.expleo.stackoverflow.repository.DataSource;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -20,20 +19,19 @@ import java.util.List;
 
 public class MainViewModel extends AndroidViewModel {
 
-    private LiveData<List<QuestionItem>> blablaLiveData;
-    private final QuestionsRepository repository;
+    private LiveData<List<QuestionsAdapter.Item>> recyclerQuestionItemsLiveData;
+    private final DataSource repository;
 
     public MainViewModel(@NonNull Application application) {
         super(application);
-        repository = ((App) application).getRepository();
-        LiveData<QuestionsList> questionsListLiveData = repository.getQuestionsListLiveData();
-        blablaLiveData = Transformations.map(questionsListLiveData, questionsList -> {
-            List<QuestionItem> result = new ArrayList<>();
-            for (Item item : questionsList.items) {
-                QuestionItem questionItem = new QuestionItem();
-                questionItem.photoUri = Uri.parse(item.owner.profileImage);
-                questionItem.questionDate = getQuestionDateStringFormat(item);
-                questionItem.questionTitle = item.title;
+        repository = ((App) application).getDataSource();
+        recyclerQuestionItemsLiveData = Transformations.map(repository.getQuestions(), questionsList -> {
+            List<QuestionsAdapter.Item> result = new ArrayList<>();
+            for (AppQuestion appQuestion : questionsList) {
+                QuestionsAdapter.Item questionItem = new QuestionsAdapter.Item();
+                questionItem.photoUri = Uri.parse(appQuestion.appQuestionOwner.profileImage);
+                questionItem.questionDate = getQuestionDateStringFormat(appQuestion.creationDate);
+                questionItem.questionTitle = appQuestion.title;
                 result.add(questionItem);
             }
             return result;
@@ -41,16 +39,12 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     @NotNull
-    private String getQuestionDateStringFormat(Item item) {
-        return new Date(item.creationDate).toString();
+    private String getQuestionDateStringFormat(int time) {
+        return new Date(time).toString();
     }
 
-    public void fetchQuestions() {
-        repository.fetchQuestionsFromServer();
-    }
-
-    public LiveData<List<QuestionItem>> getItemsListLiveData() {
-        return blablaLiveData;
+    public LiveData<List<QuestionsAdapter.Item>> getItemsListLiveData() {
+        return recyclerQuestionItemsLiveData;
     }
 
 }

@@ -6,6 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
+import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestion;
 
 import java.util.List;
 
@@ -13,9 +14,9 @@ import java.util.List;
 public interface QuestionDao {
 
     @Query("SELECT * FROM questions")
-    LiveData<List<Question>> getAllQuestions();
+    LiveData<List<DbQuestion>> getAllQuestions();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void addAll(List<Question> questions);
+    void addAll(List<DbQuestion> dbQuestions);
 
 }

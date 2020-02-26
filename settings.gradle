@@ -1,6 +1,6 @@
 include ':utils'
-//include ':day1_victrola'
-//include ':day2_arch'
+include ':day1_victrola'
+include ':day2_arch'
 include ':client'
 rootProject.name='ExpleoTraining'
 include ':day3_stackoverflow'
