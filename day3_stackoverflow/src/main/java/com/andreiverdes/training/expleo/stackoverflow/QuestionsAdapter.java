@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.andreiverdes.training.expleo.arch.R;
 import com.andreiverdes.training.expleo.arch.databinding.ItemQuestionBinding;
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,9 +33,8 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
     public static void setUserUri(ImageView imageView,
                                   Uri userImageUri) {
         if (userImageUri != null) {
-            Picasso.get()
+            Glide.with(imageView)
                     .load(userImageUri)
-                    .placeholder(R.drawable.ic_ac_unit_black_24dp)
                     .into(imageView);
         }
     }
