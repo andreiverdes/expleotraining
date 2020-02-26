@@ -1,7 +1,9 @@
 package com.andreiverdes.training.expleo.stackoverflow;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.BindingAdapter;
@@ -11,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.andreiverdes.training.expleo.arch.R;
 import com.andreiverdes.training.expleo.arch.databinding.ItemQuestionBinding;
 import com.andreiverdes.training.expleo.stackoverflow.model.QuestionItem;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,17 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
                                    List<QuestionItem> questionItems) {
         if (questionItems != null) {
             ((QuestionsAdapter) recyclerView.getAdapter()).setItems(questionItems);
+        }
+    }
+
+    @BindingAdapter("userUri")
+    public static void setUserUri(ImageView imageView,
+                                  Uri userImageUri) {
+        if (userImageUri != null) {
+            Picasso.get()
+                    .load(userImageUri)
+                    .placeholder(R.drawable.ic_ac_unit_black_24dp)
+                    .into(imageView);
         }
     }
 
