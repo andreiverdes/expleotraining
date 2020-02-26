@@ -3,7 +3,6 @@ package com.andreiverdes.training.expleo.stackoverflow;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.BindingAdapter;
@@ -12,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.andreiverdes.training.expleo.arch.R;
 import com.andreiverdes.training.expleo.arch.databinding.ItemQuestionBinding;
-import com.bumptech.glide.Glide;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,12 +29,10 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
     }
 
     @BindingAdapter("userUri")
-    public static void setUserUri(ImageView imageView,
+    public static void setUserUri(SimpleDraweeView imageView,
                                   Uri userImageUri) {
         if (userImageUri != null) {
-            Glide.with(imageView)
-                    .load(userImageUri)
-                    .into(imageView);
+            imageView.setImageURI(userImageUri);
         }
     }
 

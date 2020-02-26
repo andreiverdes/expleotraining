@@ -1,9 +1,14 @@
 package com.andreiverdes.training.expleo.stackoverflow.repository;
 
+import android.content.Context;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 
+import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
+import com.andreiverdes.training.expleo.stackoverflow.QuestionsDatabase;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
+import com.andreiverdes.training.expleo.stackoverflow.model.Translator;
 
 import java.util.List;
 
@@ -14,11 +19,13 @@ public class QuestionsRepository implements DataSource {
 
     private MediatorLiveData<List<AppQuestion>> questionsListLiveData = new MediatorLiveData<>();
 
-    public static QuestionsRepository getInstance(
-            DataSource remoteDataSource,
-            DataSource cacheDataSource
-    ) {
+    public static QuestionsRepository getInstance(Context appContext) {
         if (ourInstance == null) {
+            StackoverflowClient stackOverflowClient = StackoverflowClient.instance;
+            QuestionsDatabase questionsDatabase = QuestionsDatabase.getInstance(appContext);
+            Translator translator = new Translator();
+            DataSource cacheDataSource = new CacheDataSource(questionsDatabase, translator);
+            DataSource remoteDataSource = new RemoteDataSource(stackOverflowClient, translator);
             ourInstance = new QuestionsRepository(remoteDataSource, cacheDataSource);
         }
         return ourInstance;
