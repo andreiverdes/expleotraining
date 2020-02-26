@@ -2,7 +2,7 @@ package com.andreiverdes.training.expleo.stackoverflow;
 
 import android.app.Application;
 
-import com.andreiverdes.training.expleo.cinema.data.StackOverflowClient;
+import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
 
 public class App extends Application {
 
@@ -11,8 +11,11 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        StackOverflowClient stackOverflowClient = StackOverflowClient.instance;
+        StackoverflowClient stackOverflowClient = StackoverflowClient.instance;
         repository = QuestionsRepository.getInstance(stackOverflowClient);
     }
 
+    public QuestionsRepository getRepository() {
+        return repository;
+    }
 }

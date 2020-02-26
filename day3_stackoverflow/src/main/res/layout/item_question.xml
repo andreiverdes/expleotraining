@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ceVreau"
-            type="com.andreiverdes.training.expleo.stackoverflow.QuestionsAdapter.QuestionItem" />
+            type="com.andreiverdes.training.expleo.stackoverflow.model.QuestionItem" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

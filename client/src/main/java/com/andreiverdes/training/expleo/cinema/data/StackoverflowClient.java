@@ -5,13 +5,13 @@ import com.squareup.moshi.Moshi;
 import retrofit2.Retrofit;
 import retrofit2.converter.moshi.MoshiConverterFactory;
 
-public class StackOverflowClient {
+public class StackoverflowClient {
 
-    public static final StackOverflowClient instance = new StackOverflowClient();
+    public static final StackoverflowClient instance = new StackoverflowClient();
 
     public final QuestionsApi questionsApi;
 
-    private StackOverflowClient() {
+    private StackoverflowClient() {
         Moshi moshi = new Moshi.Builder()
                 .build();
 

@@ -3,7 +3,7 @@ package com.andreiverdes.training.expleo.stackoverflow;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.andreiverdes.training.expleo.cinema.data.StackOverflowClient;
+import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
 import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
 
 import retrofit2.Call;
@@ -12,12 +12,12 @@ import retrofit2.Response;
 
 public class QuestionsRepository {
     private static QuestionsRepository ourInstance;
-    private StackOverflowClient stackOverflowClient;
+    private StackoverflowClient stackOverflowClient;
 
     private MutableLiveData<QuestionsList> questionsListLiveData = new MutableLiveData<>();
 
     public static QuestionsRepository getInstance(
-            StackOverflowClient stackOverflowClient
+            StackoverflowClient stackOverflowClient
     ) {
         if (ourInstance == null) {
             ourInstance = new QuestionsRepository(stackOverflowClient);
@@ -25,7 +25,7 @@ public class QuestionsRepository {
         return ourInstance;
     }
 
-    private QuestionsRepository(StackOverflowClient stackOverflowClient) {
+    private QuestionsRepository(StackoverflowClient stackOverflowClient) {
         this.stackOverflowClient = stackOverflowClient;
     }
 
@@ -33,14 +33,14 @@ public class QuestionsRepository {
         return questionsListLiveData;
     }
 
-    private void fetchQuestionsFromServer() {
+    public void fetchQuestionsFromServer() {
         this.stackOverflowClient.questionsApi.getFirst50Questions()
                 .enqueue(new Callback<QuestionsList>() {
                     @Override
                     public void onResponse(Call<QuestionsList> call,
                                            Response<QuestionsList> response) {
                         if (response.isSuccessful()) {
-                            questionsListLiveData.postValue(response.body());
+                            questionsListLiveData.setValue(response.body());
                         }
                     }
 

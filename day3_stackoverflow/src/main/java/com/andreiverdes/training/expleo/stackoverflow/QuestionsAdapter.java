@@ -1,6 +1,5 @@
 package com.andreiverdes.training.expleo.stackoverflow;
 
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -11,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.andreiverdes.training.expleo.arch.R;
 import com.andreiverdes.training.expleo.arch.databinding.ItemQuestionBinding;
+import com.andreiverdes.training.expleo.stackoverflow.model.QuestionItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,9 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
     @BindingAdapter("items")
     public static void setItemList(RecyclerView recyclerView,
                                    List<QuestionItem> questionItems) {
-        ((QuestionsAdapter) recyclerView.getAdapter()).setItems(questionItems);
+        if (questionItems != null) {
+            ((QuestionsAdapter) recyclerView.getAdapter()).setItems(questionItems);
+        }
     }
 
     @NonNull
@@ -62,13 +64,4 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
         }
     }
 
-    public static class QuestionItem {
-        public Uri photoUri;
-        public String questionTitle;
-        public String questionDate;
-
-        public void thisWasClicked() {
-
-        }
-    }
 }

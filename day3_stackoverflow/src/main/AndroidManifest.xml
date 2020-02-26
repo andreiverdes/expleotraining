@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.andreiverdes.training.expleo.arch" >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name="com.andreiverdes.training.expleo.stackoverflow.App"
         android:allowBackup="true"
