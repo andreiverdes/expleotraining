@@ -21,7 +21,7 @@ import androidx.work.WorkManager;
 
 import com.andreiverdes.training.expleo.utils.Lessons;
 import com.andreiverdes.training.expleo.victrola.R;
-import com.andreiverdes.training.expleo.victrola.util.Lazy;
+import com.andreiverdes.training.expleo.utils.Lazy;
 
 import java.util.concurrent.TimeUnit;
 

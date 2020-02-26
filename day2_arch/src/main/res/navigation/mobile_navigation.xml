@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/step1">
+
+
+    <fragment
+        android:id="@+id/step1"
+        android:name="com.andreiverdes.training.expleo.arch.ui.step1.Step1Fragment"
+        android:label="Step 1"
+        tools:layout="@layout/fragment_step1" />
+
+    <fragment
+        android:id="@+id/step2"
+        android:name="com.andreiverdes.training.expleo.arch.ui.step2.Step2Fragment"
+        android:label="Step 2"
+        tools:layout="@layout/fragment_step2" />
+
+    <fragment
+        android:id="@+id/step3"
+        android:name="com.andreiverdes.training.expleo.arch.ui.step3.Step3Fragment"
+        android:label="Step 3"
+        tools:layout="@layout/fragment_step3" />
+
+    <fragment
+        android:id="@+id/step4"
+        android:name="com.andreiverdes.training.expleo.arch.ui.step4.Step4Fragment"
+        android:label="Step 4"
+        tools:layout="@layout/fragment_step4" />
+
+    <fragment
+        android:id="@+id/step5"
+        android:name="com.andreiverdes.training.expleo.arch.ui.step5.Step5Fragment"
+        android:label="Step 5"
+        tools:layout="@layout/fragment_step5" />
+</navigation>
