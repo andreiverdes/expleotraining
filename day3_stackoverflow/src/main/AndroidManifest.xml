@@ -3,6 +3,7 @@
     package="com.andreiverdes.training.expleo.arch" >
 
     <application
+        android:name="com.andreiverdes.training.expleo.stackoverflow.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
