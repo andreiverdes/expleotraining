@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="ceVreau"
+            type="com.andreiverdes.training.expleo.stackoverflow.QuestionsAdapter.QuestionItem" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="96dp">
+        android:layout_height="96dp"
+        android:onClick="@{() -> ceVreau.thisWasClicked()}">
 
         <ImageView
             android:id="@+id/user_photo"
@@ -21,6 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="@{ceVreau.questionTitle}"
             app:layout_constraintStart_toEndOf="@id/user_photo"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -30,6 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="@{ceVreau.questionDate}"
             app:layout_constraintStart_toEndOf="@id/user_photo"
             app:layout_constraintTop_toBottomOf="@id/question_title"
             app:layout_constraintEnd_toEndOf="parent"/>

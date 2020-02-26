@@ -9,7 +9,7 @@ public class StackoverflowClient {
 
     public static final StackoverflowClient instance = new StackoverflowClient();
 
-    public final com.andreiverdes.training.expleo.cinema.data.QuestionsApi questionsApi;
+    public final QuestionsApi questionsApi;
 
     private StackoverflowClient() {
         Moshi moshi = new Moshi.Builder()
@@ -20,6 +20,6 @@ public class StackoverflowClient {
                 .addConverterFactory(MoshiConverterFactory.create(moshi))
                 .build();
 
-        this.questionsApi = retrofit.create(com.andreiverdes.training.expleo.cinema.data.QuestionsApi.class);
+        this.questionsApi = retrofit.create(QuestionsApi.class);
     }
 }
