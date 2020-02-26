@@ -8,7 +8,7 @@ import androidx.lifecycle.Transformations;
 import com.andreiverdes.training.expleo.stackoverflow.QuestionsDatabase;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestion;
-import com.andreiverdes.training.expleo.stackoverflow.model.Translator;
+import com.andreiverdes.training.expleo.stackoverflow.Translator;
 
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -42,5 +42,11 @@ public class CacheDataSource implements DataSource {
                 Log.e(TAG, "saveQuestions: ", e);
             }
         });
+    }
+
+    @Override
+    public LiveData<List<AppQuestion>> filter(String filter) {
+        return Transformations.map(database.questionDao().filterTitles(filter),
+                questions -> translator.dbToAppQuestions(questions));
     }
 }

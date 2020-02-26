@@ -1,10 +1,20 @@
-package com.andreiverdes.training.expleo.stackoverflow.model;
+package com.andreiverdes.training.expleo.stackoverflow;
+
+import android.net.Uri;
 
 import com.andreiverdes.training.expleo.cinema.data.model.Item;
 import com.andreiverdes.training.expleo.cinema.data.model.Owner;
 import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
+import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
+import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestionOwner;
+import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestion;
+import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestionOwner;
+import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestionTag;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Translator {
@@ -126,5 +136,23 @@ public class Translator {
         result.displayName = owner.displayName;
         result.link = owner.link;
         return result;
+    }
+
+    @NotNull
+    public List<QuestionsAdapter.Item> appToRecyclerItem(List<AppQuestion> questionsList) {
+        List<QuestionsAdapter.Item> result = new ArrayList<>();
+        for (AppQuestion appQuestion : questionsList) {
+            QuestionsAdapter.Item questionItem = new QuestionsAdapter.Item();
+            questionItem.photoUri = Uri.parse(appQuestion.appQuestionOwner.profileImage);
+            questionItem.questionDate = getQuestionDateStringFormat(appQuestion.creationDate);
+            questionItem.questionTitle = appQuestion.title;
+            result.add(questionItem);
+        }
+        return result;
+    }
+
+    @NotNull
+    private String getQuestionDateStringFormat(int time) {
+        return new Date(time).toString();
     }
 }

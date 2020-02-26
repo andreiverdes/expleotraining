@@ -8,7 +8,7 @@ import androidx.lifecycle.MediatorLiveData;
 import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
 import com.andreiverdes.training.expleo.stackoverflow.QuestionsDatabase;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
-import com.andreiverdes.training.expleo.stackoverflow.model.Translator;
+import com.andreiverdes.training.expleo.stackoverflow.Translator;
 
 import java.util.List;
 
@@ -51,5 +51,10 @@ public class QuestionsRepository implements DataSource {
     @Override
     public void saveQuestions(List<AppQuestion> questions) {
         cacheDataSource.saveQuestions(questions);
+    }
+
+    @Override
+    public LiveData<List<AppQuestion>> filter(String filter) {
+        return cacheDataSource.filter(filter);
     }
 }

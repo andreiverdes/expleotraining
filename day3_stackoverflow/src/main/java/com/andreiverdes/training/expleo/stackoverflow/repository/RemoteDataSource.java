@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData;
 import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
 import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
-import com.andreiverdes.training.expleo.stackoverflow.model.Translator;
+import com.andreiverdes.training.expleo.stackoverflow.Translator;
 
 import java.util.List;
 
@@ -47,5 +47,10 @@ public class RemoteDataSource implements DataSource {
     @Override
     public void saveQuestions(List<AppQuestion> questions) {
         throw new UnsupportedOperationException("Can't save questions in the Remote DatasSource");
+    }
+
+    @Override
+    public LiveData<List<AppQuestion>> filter(String filter) {
+        throw new UnsupportedOperationException("Not Implemented!");
     }
 }

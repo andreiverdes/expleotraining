@@ -12,4 +12,5 @@ public interface DataSource {
 
     void saveQuestions(List<AppQuestion> questions);
 
+    LiveData<List<AppQuestion>> filter(String filter);
 }

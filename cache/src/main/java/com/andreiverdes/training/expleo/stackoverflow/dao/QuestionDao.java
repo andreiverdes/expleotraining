@@ -19,4 +19,6 @@ public interface QuestionDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void addAll(List<DbQuestion> dbQuestions);
 
+    @Query("SELECT * from questions WHERE title LIKE '%' || :filterString || '%'")
+    LiveData<List<DbQuestion>> filterTitles(String filterString);
 }
