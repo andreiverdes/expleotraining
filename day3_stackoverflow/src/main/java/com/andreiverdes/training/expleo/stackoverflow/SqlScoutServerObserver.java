@@ -13,7 +13,7 @@ public class SqlScoutServerObserver implements LifecycleObserver {
     private Context context;
     private SqlScoutServer sqlScoutServer;
 
-    public SqlScoutServerObserver(Context context) {
+    SqlScoutServerObserver(Context context) {
         this.context = context;
     }
 

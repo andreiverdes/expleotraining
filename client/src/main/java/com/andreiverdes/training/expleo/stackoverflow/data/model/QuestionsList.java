@@ -1,5 +1,5 @@
 
-package com.andreiverdes.training.expleo.cinema.data.model;
+package com.andreiverdes.training.expleo.stackoverflow.data.model;
 
 import com.squareup.moshi.Json;
 

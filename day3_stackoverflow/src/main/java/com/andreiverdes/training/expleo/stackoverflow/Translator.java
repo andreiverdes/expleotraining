@@ -2,9 +2,9 @@ package com.andreiverdes.training.expleo.stackoverflow;
 
 import android.net.Uri;
 
-import com.andreiverdes.training.expleo.cinema.data.model.Item;
-import com.andreiverdes.training.expleo.cinema.data.model.Owner;
-import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
+import com.andreiverdes.training.expleo.stackoverflow.data.model.Item;
+import com.andreiverdes.training.expleo.stackoverflow.data.model.Owner;
+import com.andreiverdes.training.expleo.stackoverflow.data.model.QuestionsList;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestionOwner;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestion;

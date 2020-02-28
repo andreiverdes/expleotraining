@@ -1,6 +1,6 @@
-package com.andreiverdes.training.expleo.cinema.data;
+package com.andreiverdes.training.expleo.stackoverflow.data;
 
-import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
+import com.andreiverdes.training.expleo.stackoverflow.data.model.QuestionsList;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

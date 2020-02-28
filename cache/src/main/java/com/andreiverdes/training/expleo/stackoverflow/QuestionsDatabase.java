@@ -37,6 +37,7 @@ public abstract class QuestionsDatabase extends RoomDatabase {
 
     private static QuestionsDatabase buildDatabase(final Context appContext) {
         return Room.databaseBuilder(appContext, QuestionsDatabase.class, "VERY_IMPORTANT_QUESTIONS")
+                .allowMainThreadQueries()
                 .addCallback(new Callback() {
                     @Override
                     public void onCreate(@NonNull SupportSQLiteDatabase db) {

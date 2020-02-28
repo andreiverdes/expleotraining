@@ -3,8 +3,8 @@ package com.andreiverdes.training.expleo.stackoverflow.repository;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
-import com.andreiverdes.training.expleo.cinema.data.model.QuestionsList;
+import com.andreiverdes.training.expleo.stackoverflow.data.StackoverflowClient;
+import com.andreiverdes.training.expleo.stackoverflow.data.model.QuestionsList;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
 import com.andreiverdes.training.expleo.stackoverflow.Translator;
 

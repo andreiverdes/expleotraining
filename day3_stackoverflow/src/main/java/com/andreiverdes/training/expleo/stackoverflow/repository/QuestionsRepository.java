@@ -5,7 +5,7 @@ import android.content.Context;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 
-import com.andreiverdes.training.expleo.cinema.data.StackoverflowClient;
+import com.andreiverdes.training.expleo.stackoverflow.data.StackoverflowClient;
 import com.andreiverdes.training.expleo.stackoverflow.QuestionsDatabase;
 import com.andreiverdes.training.expleo.stackoverflow.model.AppQuestion;
 import com.andreiverdes.training.expleo.stackoverflow.Translator;

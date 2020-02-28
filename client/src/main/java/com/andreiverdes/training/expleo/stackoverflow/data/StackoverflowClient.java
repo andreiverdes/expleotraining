@@ -1,4 +1,4 @@
-package com.andreiverdes.training.expleo.cinema.data;
+package com.andreiverdes.training.expleo.stackoverflow.data;
 
 import com.squareup.moshi.Moshi;
 
