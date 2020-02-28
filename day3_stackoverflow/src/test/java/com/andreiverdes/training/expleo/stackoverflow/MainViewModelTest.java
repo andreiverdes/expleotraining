@@ -28,10 +28,11 @@ public class MainViewModelTest {
     public void getItemsListLiveData() {
         //TODO implement and inject a FakeRepository that returns custom Items
         Application application = ApplicationProvider.getApplicationContext();
-        DataSource dataSource = QuestionsRepository.getInstance(application);
-        MainViewModel mainViewModel = new MainViewModel(dataSource);
+        FakeRepository fakeRepository = new FakeRepository();
+        MainViewModel mainViewModel = new MainViewModel(fakeRepository);
         List<QuestionsAdapter.Item> questions = getOrAwait(mainViewModel.getItemsListLiveData());
         Assert.assertEquals(questions.size(), 0);
+        //TODO assert that the values are the ones built in the FakeRepo
     }
 
     @Test

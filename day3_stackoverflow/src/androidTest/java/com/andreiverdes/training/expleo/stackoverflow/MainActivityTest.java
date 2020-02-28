@@ -19,7 +19,7 @@ public class MainActivityTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mainActivityActivityScenarioRule
-            = new ActivityScenarioRule<MainActivity>(MainActivity.class);
+            = new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
     public void testEditText() {
