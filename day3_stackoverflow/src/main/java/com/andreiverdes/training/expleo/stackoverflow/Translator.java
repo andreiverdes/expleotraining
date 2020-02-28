@@ -143,7 +143,9 @@ public class Translator {
         List<QuestionsAdapter.Item> result = new ArrayList<>();
         for (AppQuestion appQuestion : questionsList) {
             QuestionsAdapter.Item questionItem = new QuestionsAdapter.Item();
-            questionItem.photoUri = Uri.parse(appQuestion.appQuestionOwner.profileImage);
+            questionItem.photoUri = appQuestion.appQuestionOwner.profileImage == null
+                    ? Uri.EMPTY
+                    : Uri.parse(appQuestion.appQuestionOwner.profileImage);
             questionItem.questionDate = getQuestionDateStringFormat(appQuestion.creationDate);
             questionItem.questionTitle = appQuestion.title;
             result.add(questionItem);
