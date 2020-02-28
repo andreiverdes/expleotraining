@@ -28,7 +28,7 @@ public class RemoteDataSource implements DataSource {
 
     @Override
     public LiveData<List<AppQuestion>> getQuestions() {
-        client.questionsApi.getFirst50Questions().enqueue(new Callback<QuestionsList>() {
+        client.questionsApi.getMostRecentQuestions().enqueue(new Callback<QuestionsList>() {
             @Override
             public void onResponse(Call<QuestionsList> call, Response<QuestionsList> response) {
                 if (response.isSuccessful() && response.body() != null) {

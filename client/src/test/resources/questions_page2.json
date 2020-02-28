@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "tags": [
+        "android",
+        "localization",
+        "subscription"
+      ],
+      "owner": {
+        "reputation": 81,
+        "user_id": 3197164,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/44c6b76e0df1932132151fdfda498139?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Pieter",
+        "link": "https://stackoverflow.com/users/3197164/pieter"
+      },
+      "is_answered": false,
+      "view_count": 2,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582876313,
+      "creation_date": 1582876313,
+      "question_id": 60447393,
+      "link": "https://stackoverflow.com/questions/60447393/android-subscription-localisation",
+      "title": "Android subscription localisation"
+    },
+    {
+      "tags": [
+        "android",
+        "mdm",
+        "restriction",
+        "intune"
+      ],
+      "owner": {
+        "reputation": 31,
+        "user_id": 2454911,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/b2a5f814a7161acf4bf9c02a4cb248f6?s=128&d=identicon&r=PG",
+        "display_name": "Justin Hilton",
+        "link": "https://stackoverflow.com/users/2454911/justin-hilton"
+      },
+      "is_answered": false,
+      "view_count": 7,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582876283,
+      "creation_date": 1582874135,
+      "last_edit_date": 1582876283,
+      "question_id": 60446941,
+      "link": "https://stackoverflow.com/questions/60446941/how-to-get-managed-configuration-data-in-android-app-using-mdm",
+      "title": "How to get managed configuration data in Android App using MDM"
+    },
+    {
+      "tags": [
+        "android",
+        "kotlin",
+        "location",
+        "cell"
+      ],
+      "owner": {
+        "reputation": 229,
+        "user_id": 8776330,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/a9187bfac32a0e92d754648e84d4e8fa?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Pavel Pereverzev",
+        "link": "https://stackoverflow.com/users/8776330/pavel-pereverzev"
+      },
+      "is_answered": false,
+      "view_count": 19,
+      "bounty_amount": 50,
+      "bounty_closes_date": 1583481135,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582876335,
+      "creation_date": 1582669346,
+      "last_edit_date": 1582876240,
+      "question_id": 60404060,
+      "link": "https://stackoverflow.com/questions/60404060/kotlin-allcellinfo-returns-null-when-gps-is-off",
+      "title": "Kotlin allCellInfo returns null when GPS is off"
+    },
+    {
+      "tags": [
+        "android",
+        "xamarin",
+        "xamarin.forms"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 2753439,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/4b62312af9d4d85aa45de8f3ec5bfaf6?s=128&d=identicon&r=PG",
+        "display_name": "Azhar",
+        "link": "https://stackoverflow.com/users/2753439/azhar"
+      },
+      "is_answered": false,
+      "view_count": 8,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582876149,
+      "creation_date": 1582876149,
+      "question_id": 60447362,
+      "link": "https://stackoverflow.com/questions/60447362/increase-descrease-the-splashscreen-time-in-xamarin-app",
+      "title": "Increase/Descrease the SplashScreen time In XAMARIN APP"
+    },
+    {
+      "tags": [
+        "android",
+        "kotlin",
+        "request",
+        "connection"
+      ],
+      "owner": {
+        "reputation": 45,
+        "user_id": 12885827,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/ba01f9cbd790a112b30520b664afb51e?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Oğuz Kurukaya",
+        "link": "https://stackoverflow.com/users/12885827/o%c4%9fuz-kurukaya"
+      },
+      "is_answered": true,
+      "view_count": 14,
+      "accepted_answer_id": 60447324,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582875933,
+      "creation_date": 1581513327,
+      "question_id": 60189239,
+      "link": "https://stackoverflow.com/questions/60189239/d-networksecurityconfig-no-network-security-config-specified-using-platform",
+      "title": "**D/NetworkSecurityConfig: No Network Security Config specified, using platform default**"
+    },
+    {
+      "tags": [
+        "android",
+        "android-fragments",
+        "android-support-library",
+        "android-fragmentactivity",
+        "fragmentmanager"
+      ],
+      "owner": {
+        "reputation": 3451,
+        "user_id": 2290017,
+        "user_type": "registered",
+        "accept_rate": 38,
+        "profile_image": "https://www.gravatar.com/avatar/4fa3a7c0b70ded7944b9893ee6fd109b?s=128&d=identicon&r=PG&f=1",
+        "display_name": "DjP",
+        "link": "https://stackoverflow.com/users/2290017/djp"
+      },
+      "is_answered": true,
+      "view_count": 207416,
+      "accepted_answer_id": 20237647,
+      "answer_count": 17,
+      "score": 145,
+      "last_activity_date": 1582875933,
+      "creation_date": 1385541888,
+      "last_edit_date": 1438207167,
+      "question_id": 20237531,
+      "link": "https://stackoverflow.com/questions/20237531/how-can-i-access-getsupportfragmentmanager-in-a-fragment",
+      "title": "How can I access getSupportFragmentManager() in a fragment?"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 10000,
+  "quota_remaining": 9992
+}

@@ -1,0 +1,627 @@
+{
+  "items": [
+    {
+      "tags": [
+        "android",
+        "retrofit2"
+      ],
+      "owner": {
+        "reputation": 27,
+        "user_id": 12105539,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/77b378730e3949a10a2df7dc7d5733a7?s=128&d=identicon&r=PG&f=1",
+        "display_name": "amar544",
+        "link": "https://stackoverflow.com/users/12105539/amar544"
+      },
+      "is_answered": false,
+      "view_count": 14,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582875866,
+      "creation_date": 1582874961,
+      "question_id": 60447107,
+      "link": "https://stackoverflow.com/questions/60447107/create-array-of-object-in-android-retrofit2-using-put-request",
+      "title": "Create array of object in android retrofit2 using put request"
+    },
+    {
+      "tags": [
+        "android",
+        "android-studio",
+        "android-layout"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 9984039,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-4tuKQxkUYKk/AAAAAAAAAAI/AAAAAAAADRo/B0PSaUWoJls/photo.jpg?sz=128",
+        "display_name": "Dhairya Bhatt",
+        "link": "https://stackoverflow.com/users/9984039/dhairya-bhatt"
+      },
+      "is_answered": false,
+      "view_count": 30,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582875767,
+      "creation_date": 1582868447,
+      "last_edit_date": 1582875767,
+      "question_id": 60445865,
+      "link": "https://stackoverflow.com/questions/60445865/constrain-view-issue",
+      "title": "Constrain View Issue"
+    },
+    {
+      "tags": [
+        "java",
+        "android",
+        "sorting",
+        "arraylist"
+      ],
+      "owner": {
+        "reputation": 5927,
+        "user_id": 2090595,
+        "user_type": "registered",
+        "accept_rate": 76,
+        "profile_image": "https://i.stack.imgur.com/zYrg0.jpg?s=128&g=1",
+        "display_name": "Sreedev R",
+        "link": "https://stackoverflow.com/users/2090595/sreedev-r"
+      },
+      "is_answered": false,
+      "view_count": 26,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582875751,
+      "creation_date": 1582874961,
+      "question_id": 60447109,
+      "link": "https://stackoverflow.com/questions/60447109/sorting-list-of-strings-with-numbers-and-ranges",
+      "title": "Sorting list of strings with numbers and ranges"
+    },
+    {
+      "tags": [
+        "android",
+        "ionic-framework",
+        "ionic3",
+        "ionic-native"
+      ],
+      "owner": {
+        "reputation": 597,
+        "user_id": 4188732,
+        "user_type": "registered",
+        "accept_rate": 53,
+        "profile_image": "https://i.stack.imgur.com/QfeJu.png?s=128&g=1",
+        "display_name": "Anuj",
+        "link": "https://stackoverflow.com/users/4188732/anuj"
+      },
+      "is_answered": false,
+      "view_count": 6,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582875742,
+      "creation_date": 1582873908,
+      "question_id": 60446892,
+      "link": "https://stackoverflow.com/questions/60446892/ionic-native-tried-calling-uid-imei-but-the-uid-plugin-is-not-installed-in-s",
+      "title": "Ionic Native: tried calling Uid.IMEI, but the Uid plugin is not installed. (In some devices)"
+    },
+    {
+      "tags": [
+        "android",
+        "arrays"
+      ],
+      "owner": {
+        "reputation": 139,
+        "user_id": 12247522,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/a-/AAuE7mCuykhhBd-C3-1XWgdMcZLJxZLw_dPH1aLgxGI=k-s128",
+        "display_name": "Costin",
+        "link": "https://stackoverflow.com/users/12247522/costin"
+      },
+      "is_answered": false,
+      "view_count": 11,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582875729,
+      "creation_date": 1582875729,
+      "question_id": 60447281,
+      "link": "https://stackoverflow.com/questions/60447281/for-not-running-in-onpostexecute",
+      "title": "for not running in onPostExecute"
+    },
+    {
+      "tags": [
+        "android",
+        "retrofit",
+        "android-livedata"
+      ],
+      "owner": {
+        "reputation": 1027,
+        "user_id": 9768260,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/604c85a549d2603e8119880c100b5aae?s=128&d=identicon&r=PG",
+        "display_name": "ccd",
+        "link": "https://stackoverflow.com/users/9768260/ccd"
+      },
+      "is_answered": false,
+      "view_count": 15,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582875657,
+      "creation_date": 1582874468,
+      "question_id": 60446998,
+      "link": "https://stackoverflow.com/questions/60446998/get-the-result-of-retrofit-async-call",
+      "title": "Get the result of retrofit async call"
+    },
+    {
+      "tags": [
+        "android",
+        "firebase",
+        "kotlin",
+        "google-cloud-firestore"
+      ],
+      "owner": {
+        "reputation": 27,
+        "user_id": 10206991,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/-NYOgE-oy640/AAAAAAAAAAI/AAAAAAAAB38/9Yx-zSLeB9k/photo.jpg?sz=128",
+        "display_name": "Mustafa Max",
+        "link": "https://stackoverflow.com/users/10206991/mustafa-max"
+      },
+      "is_answered": false,
+      "view_count": 8,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582875645,
+      "creation_date": 1582874662,
+      "last_edit_date": 1582875645,
+      "question_id": 60447041,
+      "link": "https://stackoverflow.com/questions/60447041/a-better-way-to-handle-the-user-list-in-firestore",
+      "title": "A better way to handle the user list in Firestore"
+    },
+    {
+      "tags": [
+        "java",
+        "android",
+        "firebase",
+        "firebase-realtime-database"
+      ],
+      "owner": {
+        "reputation": 21,
+        "user_id": 12763664,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/a-/AAuE7mDwzM09DC1McLaxzBZzVnkuaFYq_hcqzF4gYWTLrQ=k-s128",
+        "display_name": "Jomson Pullokaran",
+        "link": "https://stackoverflow.com/users/12763664/jomson-pullokaran"
+      },
+      "is_answered": false,
+      "view_count": 9,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582875586,
+      "creation_date": 1582875114,
+      "last_edit_date": 1582875586,
+      "question_id": 60447144,
+      "link": "https://stackoverflow.com/questions/60447144/firebase-realtime-database-only-the-last-row-is-fetching-if-whatever-id-is-given",
+      "title": "Firebase Realtime Database only the last row is fetching if whatever id is given"
+    },
+    {
+      "tags": [
+        "android",
+        "navigation-drawer"
+      ],
+      "owner": {
+        "reputation": 21145,
+        "user_id": 2058547,
+        "user_type": "registered",
+        "accept_rate": 60,
+        "profile_image": "https://i.stack.imgur.com/NiRyA.jpg?s=128&g=1",
+        "display_name": "Ojonugwa Jude Ochalifu",
+        "link": "https://stackoverflow.com/users/2058547/ojonugwa-jude-ochalifu"
+      },
+      "is_answered": true,
+      "view_count": 72910,
+      "protected_date": 1472201680,
+      "accepted_answer_id": 33408025,
+      "answer_count": 6,
+      "score": 53,
+      "last_activity_date": 1582875529,
+      "creation_date": 1446100678,
+      "last_edit_date": 1446100878,
+      "question_id": 33407448,
+      "link": "https://stackoverflow.com/questions/33407448/change-color-of-navigation-drawer-icon-in-android-studio-default-template",
+      "title": "Change color of Navigation Drawer Icon in Android Studio default template"
+    },
+    {
+      "tags": [
+        "java",
+        "android",
+        "listview",
+        "kotlin"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 12885931,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/5c5b0c72813504d99097bb8c7033cfbb?s=128&d=identicon&r=PG&f=1",
+        "display_name": "sena",
+        "link": "https://stackoverflow.com/users/12885931/sena"
+      },
+      "is_answered": false,
+      "view_count": 10,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582875386,
+      "creation_date": 1582875386,
+      "question_id": 60447201,
+      "link": "https://stackoverflow.com/questions/60447201/return-1-item-position-when-i-click-listview-header",
+      "title": "return -1 item position when I click listview header"
+    },
+    {
+      "tags": [
+        "android"
+      ],
+      "owner": {
+        "reputation": 360,
+        "user_id": 6276596,
+        "user_type": "registered",
+        "profile_image": "https://graph.facebook.com/10209812458696523/picture?type=large",
+        "display_name": "Furkan Yurdakul",
+        "link": "https://stackoverflow.com/users/6276596/furkan-yurdakul"
+      },
+      "is_answered": false,
+      "view_count": 14,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582875332,
+      "creation_date": 1582874979,
+      "last_edit_date": 1582875332,
+      "question_id": 60447115,
+      "link": "https://stackoverflow.com/questions/60447115/java-lang-illegalstateexception-unable-to-create-layer-for-mycustomview",
+      "title": "java.lang.IllegalStateException: Unable to create layer for MyCustomView"
+    },
+    {
+      "tags": [
+        "android",
+        "json",
+        "post",
+        "android-asynctask"
+      ],
+      "owner": {
+        "reputation": 3,
+        "user_id": 12459813,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/4b98e023923bb91684a6f7fc4f6956d6?s=128&d=identicon&r=PG",
+        "display_name": "Aman Verma",
+        "link": "https://stackoverflow.com/users/12459813/aman-verma"
+      },
+      "is_answered": false,
+      "view_count": 10,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582875330,
+      "creation_date": 1582875330,
+      "question_id": 60447190,
+      "link": "https://stackoverflow.com/questions/60447190/making-post-request-to-an-api-by-passing-object-of-a-class-as-parameter-in-andro",
+      "title": "Making POST request to an API by passing Object of a class as parameter in Android"
+    },
+    {
+      "tags": [
+        "android",
+        "android-layout",
+        "view",
+        "android-view",
+        "android-shape"
+      ],
+      "owner": {
+        "reputation": 8803,
+        "user_id": 623401,
+        "user_type": "registered",
+        "accept_rate": 62,
+        "profile_image": "https://www.gravatar.com/avatar/f79a62e1b8f067ad1aecd3a8b3927cf0?s=128&d=identicon&r=PG",
+        "display_name": "Zach",
+        "link": "https://stackoverflow.com/users/623401/zach"
+      },
+      "is_answered": true,
+      "view_count": 96835,
+      "accepted_answer_id": 26201117,
+      "answer_count": 17,
+      "score": 80,
+      "last_activity_date": 1582875306,
+      "creation_date": 1411821713,
+      "last_edit_date": 1582875306,
+      "question_id": 26074784,
+      "link": "https://stackoverflow.com/questions/26074784/how-to-make-a-view-with-rounded-corners",
+      "title": "How to make a view with rounded corners?"
+    },
+    {
+      "tags": [
+        "android",
+        "android-studio",
+        "android-layout",
+        "android-gradle-plugin"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 10550233,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-p_8xlj2kwFQ/AAAAAAAAAAI/AAAAAAAAAAA/ABtNlbDQmJEQ_BoH4AgBX4_wFsrJnAT0JQ/mo/photo.jpg?sz=128",
+        "display_name": "tehmoor amjad",
+        "link": "https://stackoverflow.com/users/10550233/tehmoor-amjad"
+      },
+      "is_answered": false,
+      "view_count": 46,
+      "answer_count": 0,
+      "score": -1,
+      "last_activity_date": 1582875235,
+      "creation_date": 1582781961,
+      "last_edit_date": 1582786604,
+      "question_id": 60426882,
+      "link": "https://stackoverflow.com/questions/60426882/updating-gradle-changed-my-xml-views-android-studio-3-6-update",
+      "title": "Updating gradle changed my xml views android studio 3.6 update"
+    },
+    {
+      "tags": [
+        "java",
+        "android",
+        "firebase-cloud-messaging",
+        "android-notifications"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 12977582,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/35d39efcb23b6027d980601e444ebc9c?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Aman Saxena",
+        "link": "https://stackoverflow.com/users/12977582/aman-saxena"
+      },
+      "is_answered": false,
+      "view_count": 38,
+      "answer_count": 2,
+      "score": 0,
+      "last_activity_date": 1582875093,
+      "creation_date": 1582872025,
+      "last_edit_date": 1582873926,
+      "question_id": 60446526,
+      "link": "https://stackoverflow.com/questions/60446526/notification-android-fcm",
+      "title": "Notification android (FCM)"
+    },
+    {
+      "tags": [
+        "android",
+        "android-studio",
+        "android-camera",
+        "onactivityresult",
+        "activity-lifecycle"
+      ],
+      "owner": {
+        "reputation": 15,
+        "user_id": 11597014,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-AdV1XZCE5jE/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reKVF1PPQ7u7MaiRTiqsiLSyi7VkA/mo/photo.jpg?sz=128",
+        "display_name": "Nikhil medtotes",
+        "link": "https://stackoverflow.com/users/11597014/nikhil-medtotes"
+      },
+      "is_answered": false,
+      "view_count": 25,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582874994,
+      "creation_date": 1582874114,
+      "last_edit_date": 1582874994,
+      "question_id": 60446935,
+      "link": "https://stackoverflow.com/questions/60446935/onactivtyresult-clearing-the-data-automatically-in-some-devices",
+      "title": "OnActivtyResult() clearing the data automatically in some devices"
+    },
+    {
+      "tags": [
+        "android",
+        "arrays",
+        "sqlite",
+        "kotlin",
+        "spinner"
+      ],
+      "owner": {
+        "reputation": 25,
+        "user_id": 12964415,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/fd401fdcf123749063d13a1814254780?s=128&d=identicon&r=PG&f=1",
+        "display_name": "jasonz",
+        "link": "https://stackoverflow.com/users/12964415/jasonz"
+      },
+      "is_answered": true,
+      "view_count": 18,
+      "accepted_answer_id": 60447120,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582874993,
+      "creation_date": 1582798049,
+      "last_edit_date": 1582874704,
+      "question_id": 60430697,
+      "link": "https://stackoverflow.com/questions/60430697/populate-spinner-data-from-sqlitedb-in-kotlin",
+      "title": "Populate Spinner Data from sqliteDB in Kotlin"
+    },
+    {
+      "tags": [
+        "android",
+        "robolectric"
+      ],
+      "owner": {
+        "reputation": 5285,
+        "user_id": 397244,
+        "user_type": "registered",
+        "accept_rate": 67,
+        "profile_image": "https://www.gravatar.com/avatar/48eda17f60e423ebc1bfd92b248bd2dd?s=128&d=identicon&r=PG",
+        "display_name": "kaneda",
+        "link": "https://stackoverflow.com/users/397244/kaneda"
+      },
+      "is_answered": true,
+      "view_count": 42931,
+      "accepted_answer_id": 12903280,
+      "answer_count": 7,
+      "score": 56,
+      "last_activity_date": 1582874602,
+      "creation_date": 1341423045,
+      "last_edit_date": 1420918728,
+      "question_id": 11333354,
+      "link": "https://stackoverflow.com/questions/11333354/how-can-i-test-fragments-with-robolectric",
+      "title": "How can I test fragments with Robolectric?"
+    },
+    {
+      "tags": [
+        "java",
+        "android",
+        "android-recyclerview",
+        "toolbar"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 12959034,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/8d50475668a8506ea3d37a8040e18800?s=128&d=identicon&r=PG&f=1",
+        "display_name": "stanley",
+        "link": "https://stackoverflow.com/users/12959034/stanley"
+      },
+      "is_answered": false,
+      "view_count": 41,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1582874538,
+      "creation_date": 1582624802,
+      "last_edit_date": 1582874538,
+      "question_id": 60391880,
+      "link": "https://stackoverflow.com/questions/60391880/android-studio-recyclerview-wont-show-my-data-when-i-add-toolbar-at-my-layout-x",
+      "title": "Android Studio RecyclerView wont show my data when i add toolbar at my `layout.xml` file"
+    },
+    {
+      "tags": [
+        "android",
+        "firebase",
+        "firebase-realtime-database"
+      ],
+      "owner": {
+        "reputation": 368,
+        "user_id": 7240059,
+        "user_type": "registered",
+        "accept_rate": 83,
+        "profile_image": "https://www.gravatar.com/avatar/42eccfd2c7cbf09acb3f5842411ce0a8?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Surabhi Choudhary",
+        "link": "https://stackoverflow.com/users/7240059/surabhi-choudhary"
+      },
+      "is_answered": false,
+      "view_count": 7,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582874496,
+      "creation_date": 1582874496,
+      "question_id": 60447002,
+      "link": "https://stackoverflow.com/questions/60447002/realtime-database-presence-bandwidth-usage",
+      "title": "Realtime database presence bandwidth usage"
+    },
+    {
+      "tags": [
+        "android",
+        "angular",
+        "ionic-framework",
+        "ionic4",
+        "contacts"
+      ],
+      "owner": {
+        "reputation": 271,
+        "user_id": 7991021,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/ac3d5a1606433a80ae07d93333766902?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Unnati Patadia",
+        "link": "https://stackoverflow.com/users/7991021/unnati-patadia"
+      },
+      "is_answered": false,
+      "view_count": 18,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582874488,
+      "creation_date": 1582873153,
+      "last_edit_date": 1582874488,
+      "question_id": 60446742,
+      "link": "https://stackoverflow.com/questions/60446742/error-typeerror-cannot-read-property-then-of-undefined-while-saving-contact-i",
+      "title": "ERROR TypeError: Cannot read property &#39;then&#39; of undefined while saving contact in IONIC 4"
+    },
+    {
+      "tags": [
+        "android",
+        "android-layout",
+        "android-fullscreen",
+        "android-motionlayout"
+      ],
+      "owner": {
+        "reputation": 1454,
+        "user_id": 5599807,
+        "user_type": "registered",
+        "accept_rate": 97,
+        "profile_image": "https://www.gravatar.com/avatar/dba91f57278b366fbc32ac51197748db?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Siarhei",
+        "link": "https://stackoverflow.com/users/5599807/siarhei"
+      },
+      "is_answered": false,
+      "view_count": 8,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582874377,
+      "creation_date": 1582874377,
+      "question_id": 60446989,
+      "link": "https://stackoverflow.com/questions/60446989/motionlayout-artifacts-afrer-exit-from-fullscreen",
+      "title": "MotionLayout artifacts afrer exit from fullscreen"
+    },
+    {
+      "tags": [
+        "java",
+        "android",
+        "kotlin"
+      ],
+      "owner": {
+        "reputation": 519,
+        "user_id": 1180196,
+        "user_type": "registered",
+        "accept_rate": 57,
+        "profile_image": "https://www.gravatar.com/avatar/6dcffcfa60d4eaf0ecc1d13db170fed4?s=128&d=identicon&r=PG",
+        "display_name": "Worker123",
+        "link": "https://stackoverflow.com/users/1180196/worker123"
+      },
+      "is_answered": true,
+      "view_count": 71,
+      "closed_date": 1581952442,
+      "accepted_answer_id": 60260269,
+      "answer_count": 2,
+      "score": -3,
+      "last_activity_date": 1582874296,
+      "creation_date": 1581933526,
+      "last_edit_date": 1582787287,
+      "question_id": 60259895,
+      "link": "https://stackoverflow.com/questions/60259895/how-to-stay-updated-as-an-android-developer",
+      "closed_reason": "Off-topic",
+      "title": "How to stay updated as an Android Developer?"
+    },
+    {
+      "tags": [
+        "android",
+        "module",
+        "aar"
+      ],
+      "owner": {
+        "reputation": 363,
+        "user_id": 2071494,
+        "user_type": "registered",
+        "accept_rate": 27,
+        "profile_image": "https://i.stack.imgur.com/Zubyp.jpg?s=128&g=1",
+        "display_name": "user512",
+        "link": "https://stackoverflow.com/users/2071494/user512"
+      },
+      "is_answered": false,
+      "view_count": 5,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1582874089,
+      "creation_date": 1582874089,
+      "question_id": 60446929,
+      "link": "https://stackoverflow.com/questions/60446929/facing-an-issue-with-modules-in-android",
+      "title": "Facing an issue with modules in android"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 10000,
+  "quota_remaining": 9992
+}
