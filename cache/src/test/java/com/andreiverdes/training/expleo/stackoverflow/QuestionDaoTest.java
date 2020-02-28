@@ -1,18 +1,23 @@
-package com.andreiverdes.training.expleo.stackoverflow.dao;
+package com.andreiverdes.training.expleo.stackoverflow;
 
 import android.content.Context;
 
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
+import androidx.lifecycle.LiveData;
 import androidx.room.Room;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.andreiverdes.training.expleo.stackoverflow.QuestionsDatabase;
+import com.andreiverdes.training.expleo.stackoverflow.dao.QuestionDao;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestion;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestionOwner;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestionTag;
+import com.andreiverdes.training.expleo.utils.AwaitLiveValue;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -24,6 +29,9 @@ import java.util.stream.IntStream;
 @RunWith(AndroidJUnit4.class)
 public class QuestionDaoTest {
 
+    @Rule
+    public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
+
     private QuestionDao questionDao;
     private QuestionsDatabase questionsDatabase;
 
@@ -33,6 +41,7 @@ public class QuestionDaoTest {
     public void setUp() throws Exception {
         Context context = ApplicationProvider.getApplicationContext();
         questionsDatabase = Room.inMemoryDatabaseBuilder(context, QuestionsDatabase.class)
+                .allowMainThreadQueries()
                 .build();
         questionDao = questionsDatabase.questionDao();
     }
@@ -48,7 +57,12 @@ public class QuestionDaoTest {
      */
     @Test
     public void getAllQuestions() {
-        //TODO
+        questionDao.addAll(dummyQuestions);
+        LiveData<List<DbQuestion>> allQuestions = questionDao.getAllQuestions();
+        List<DbQuestion> resultQuestions = AwaitLiveValue.getOrAwait(allQuestions);
+
+        Assert.assertEquals(dummyQuestions.get(0), resultQuestions.get(0));
+
     }
 
     @Test
@@ -96,6 +110,7 @@ public class QuestionDaoTest {
             dbQuestion.link = "https://example.com";
             dbQuestion.title = "Very Important Question!";
         }
+        result.add(dbQuestion);
         return result;
     }
 }
