@@ -23,6 +23,7 @@ public class MainActivityTest {
 
     @Test
     public void testEditText() {
+
         onView(withId(R.id.filter))
                 .perform(typeText("Hello!"), ViewActions.closeSoftKeyboard());
     }

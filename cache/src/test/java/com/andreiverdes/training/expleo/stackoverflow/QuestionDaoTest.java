@@ -12,10 +12,8 @@ import com.andreiverdes.training.expleo.stackoverflow.dao.QuestionDao;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestion;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestionOwner;
 import com.andreiverdes.training.expleo.stackoverflow.model.DbQuestionTag;
-import com.andreiverdes.training.expleo.utils.AwaitLiveValue;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -25,6 +23,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import static com.andreiverdes.training.expleo.utils.AwaitLiveValue.getOrAwait;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
 public class QuestionDaoTest {
@@ -59,20 +61,22 @@ public class QuestionDaoTest {
     public void getAllQuestions() {
         questionDao.addAll(dummyQuestions);
         LiveData<List<DbQuestion>> allQuestions = questionDao.getAllQuestions();
-        List<DbQuestion> resultQuestions = AwaitLiveValue.getOrAwait(allQuestions);
+        List<DbQuestion> resultQuestions = getOrAwait(allQuestions);
 
-        Assert.assertEquals(dummyQuestions.get(0), resultQuestions.get(0));
-
-    }
-
-    @Test
-    public void addAll() {
-        //TODO
+        assertEquals(dummyQuestions.get(0), resultQuestions.get(0));
     }
 
     @Test
     public void filterTitles() {
-        //TODO
+        questionDao.addAll(dummyQuestions);
+        LiveData<List<DbQuestion>> filteredQuestions
+                = questionDao.filterTitles("Important");
+        List<DbQuestion> resultQuestions = getOrAwait(filteredQuestions);
+
+        for (DbQuestion resultQuestion : resultQuestions) {
+            assertTrue(resultQuestion.title.contains("Important"));
+        }
+
     }
 
     private List<DbQuestion> buildDummyQuestionsList() {

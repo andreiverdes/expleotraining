@@ -30,6 +30,7 @@ public class DbQuestion {
         if (o == null || getClass() != o.getClass()) return false;
         DbQuestion that = (DbQuestion) o;
         return questionId == that.questionId &&
+                //TODO Add equals for tags...
                 viewCount == that.viewCount &&
                 acceptedAnswerId == that.acceptedAnswerId &&
                 answerCount == that.answerCount &&
