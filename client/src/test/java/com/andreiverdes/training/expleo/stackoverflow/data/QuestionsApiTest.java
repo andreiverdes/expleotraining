@@ -9,12 +9,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.util.Optional;
 
 import okhttp3.HttpUrl;
@@ -56,7 +52,7 @@ public class QuestionsApiTest {
     public void getFirst50Questions() throws IOException {
         MockResponse mockResponse = new MockResponse()
                 .setResponseCode(HttpURLConnection.HTTP_OK)
-                .setBody(getQuestionsJsonString("questions.json"));
+                .setBody(fileUtils.getQuestionsJsonString("questions.json"));
 
         mockWebServer.enqueue(mockResponse);
 
